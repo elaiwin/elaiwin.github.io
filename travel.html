@@ -11,31 +11,31 @@
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
+
   <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon">
   <link href="./assets/favicon.ico" rel="icon">
 
 
 
   <title>Edwin Lai | Travel</title>
-  
+
   <!-- Latest compiled and minified CSS-->
         <link rel="stylesheet" href="bootstrap.css">
       <link href="./dist/ekko-lightbox.css" rel="stylesheet">
-          
-          
+
+
           <style type="text/css">
               div.row > div > div.row {
                   margin-bottom: 30px;
               }
-          
-          
+
+
           }
           body {
-              
+
               padding-bottom: 50px;
           }
-          
+
           div.top-container {
               padding-top:100px;
               background-color: #02709e;
@@ -57,7 +57,7 @@
           div.top-header {
               margin-bottom:100px;
           }
-          
+
           h2 {
               background-color:#02709e;
               color:white;
@@ -65,22 +65,22 @@
               padding:6px;
               margin-top:100px;
           }
-          
+
           h3 {
               padding-bottom:5px;
               margin-bottom:10px;
               border-bottom:1px solid #f2f2f2;
               margin-top: 50px;
           }
-          
+
           h4:not(.modal-title) {
               margin-top:25px;
           }
-          
+
           figure {
               position: relative;
           }
-          
+
           figure figcaption {
               font-size: 22px;
               color: #fff;
@@ -96,7 +96,7 @@
               font-size:12px;
               white-space: pre;
           }
-          
+
           table {
               font-size:12px;
           }
@@ -134,26 +134,26 @@
               color:#02709e;
               text-decoration: none;
           }
-          
-          
+
+
           .roww {
               display: flex;
               flex-wrap: wrap;
               padding: 0 4px;
           }
-          
+
           /* Create three equal columns that sits next to each other */
           .columnn {
               flex: 33.3%;
               max-width: 33.3%;
               padding: 0 4px;
           }
-          
+
           .columnn img {
               margin-top: 8px;
               vertical-align: middle;
           }
-          
+
           /* Responsive layout - makes a two column-layout instead of four columns */
           @media (max-width: 800px) {
               .columnn {
@@ -161,7 +161,7 @@
                   max-width: 33.3%;
               }
           }
-          
+
           /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
           @media (max-width: 600px) {
               .columnn {
@@ -169,9 +169,9 @@
                   max-width: 100%;
               }
           }
-          
+
           </style>
-          
+
 <link href="./main.82cfd66e.css" rel="stylesheet">
 
 </head>
@@ -189,12 +189,12 @@
          </button>
          <a href="./index.html" class="navbar-brand">Edwin Lai</a>
      </div>
-     
+
      <nav class="sidebar">
          <div class="navbar-collapse" id="navbar-collapse">
              <div class="site-header hidden-xs">
                  <a class="site-brand" href="./index.html" title="">
-                     
+
                          Edwin Lai
                          </a>
                  <p>Connecting with our physical world through photography and mechanical engineering</p>
@@ -204,24 +204,28 @@
                  <li><a href="./about.html" title="">About</a></li>
                  <li><a href="./photography.html" title="">Photography</a></li>
                  <li><a href="./portfolio.html" title="">Projects</a></li>
-                 
+
              </ul>
              <nav class="nav-footer">
-                 
+
                  <p>All images &#169; 2018 Edwin Lai</p>
              </nav>
-         </div> 
+         </div>
      </nav>
  </header>
  <!-------->
- 
+
 <main class="" id="main-collapse">
     <div class="hero-full-wrapper">
         <div class="grid">
             <div class="gutter-sizer"></div>
             <div class="grid-sizer"></div>
-            
-            
+
+              <div class="grid-item">
+                  <a href="./assets/images/lighthouse.png" data-toggle="lightbox" data-gallery="example-gallery" >
+                      <img src="./assets/images/lighthouse.jpg" class="img-responsive">
+                          </a>
+              </div>
                 <div class="grid-item">
                     <a href="./assets/images/sydney.jpg" data-toggle="lightbox" data-gallery="example-gallery" >
                         <img src="./assets/images/sydney.jpg" class="img-responsive">
@@ -267,7 +271,7 @@
                         <img src="./assets/images/couple.jpg" class="img-fluid">
                             </a>
                 </div>
-                
+
                 <div class="grid-item">
                     <a href="./assets/images/japanalley.jpg" data-toggle="lightbox" data-gallery="example-gallery" data-footer="test">
                         <img src="./assets/images/japanalley.jpg" class="img-fluid">
@@ -283,12 +287,12 @@
                         <img src="./assets/images/greenhousefb.jpg" class="img-fluid">
                             </a>
                 </div>
-                
+
         </div>
     </div>
     </div>
     </div>
- 
+
         <script>
             document.addEventListener("DOMContentLoaded", function (event) {
                                       masonryBuild();
@@ -332,7 +336,7 @@
                                                                  }
                                                                  });
                                      });
-                      
+
                       // disable wrapping
                       $(document).on('click', '[data-toggle="lightbox"][data-gallery="example-gallery-11"]', function(event) {
                                      event.preventDefault();
@@ -340,7 +344,7 @@
                                                                  wrapping: false
                                                                  });
                                      });
-                      
+
                       //Programmatically call
                       $('#open-image').click(function (e) {
                                              e.preventDefault();
@@ -350,25 +354,25 @@
                                                e.preventDefault();
                                                $(this).ekkoLightbox();
                                                });
-                      
+
                       // navigateTo
                       $(document).on('click', '[data-toggle="lightbox"][data-gallery="navigateTo"]', function(event) {
                                      event.preventDefault();
-                                     
+
                                      return $(this).ekkoLightbox({
                                                                  onShown: function() {
-                                                                 
+
                                                                  this.modal().on('click', '.modal-footer a', function(e) {
-                                                                                 
+
                                                                                  e.preventDefault();
                                                                                  this.navigateTo(2);
-                                                                                 
+
                                                                                  }.bind(this));
-                                                                 
+
                                                                  }
                                                                  });
                                      });
-                      
+
                       });
     </script>
 <script type="text/javascript" src="./main.85741bff.js"></script>
